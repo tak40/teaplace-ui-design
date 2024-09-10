@@ -1,15 +1,16 @@
 // javascript
 
-const get = element => document.getElementById(element);
+const get = (element) => document.getElementById(element)
 
-let open = get("menu-btn");
-let nav = get("nav");
-let exit = get("exit-btn");
+const open = get("menu-btn")
+const nav = get("nav")
+const exit = get("exit-btn")
 
-open.addEventListener('click', () => {
-    nav.classList.add('open-nav');
+open.addEventListener("click", () => {
+    console.log("clicked")
+    nav.classList.add("open-nav")
 })
 
-exit.addEventListener('click', () => {
-    nav.classList.remove('open-nav');
+exit.addEventListener("click", () => {
+    nav.classList.remove("open-nav")
 })
